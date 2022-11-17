@@ -1,0 +1,9 @@
+/workspaces/springTarea/src/main/java/redescubrecolombia/modelo/Viaje.java
+/workspaces/springTarea/src/main/java/redescubrecolombia/UsuarioApplication.java
+/workspaces/springTarea/src/main/java/redescubrecolombia/controllers/UsuarioController.java
+/workspaces/springTarea/src/main/java/redescubrecolombia/modelo/DatoSalud.java
+/workspaces/springTarea/src/main/java/redescubrecolombia/modelo/Coordenada.java
+/workspaces/springTarea/src/main/java/redescubrecolombia/modelo/DatoDesplazamiento.java
+/workspaces/springTarea/src/main/java/redescubrecolombia/modelo/Usuario.java
+/workspaces/springTarea/src/main/java/redescubrecolombia/repository/UsuarioRepository.java
+/workspaces/springTarea/src/main/java/redescubrecolombia/controllers/HolaMundo.java
