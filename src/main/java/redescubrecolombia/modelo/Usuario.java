@@ -1,11 +1,15 @@
 package redescubrecolombia.modelo;
 
-import java.sql.Date;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
@@ -24,18 +28,22 @@ import lombok.experimental.FieldDefaults;
 @ToString
 public class Usuario {
 
-    @Id
+    @Id @GeneratedValue
+    Long id;
+
+    @Column(unique = true)
     String correo;
 
     @Column(nullable = false)
     String nombre;
     String apellido;
 
-
+    @Temporal(TemporalType.DATE)
     Date fechaNacimiento;
+
     String contrasena;
 
-    @GeneratedValue
-    Long id;
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "usuario")
+    Set<Viaje> viajes = new HashSet<>();
 
 }    

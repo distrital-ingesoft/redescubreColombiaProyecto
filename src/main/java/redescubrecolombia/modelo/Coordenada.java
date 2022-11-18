@@ -1,25 +1,24 @@
 package redescubrecolombia.modelo;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Entity
+@NoArgsConstructor
+@Getter @Setter
+@EqualsAndHashCode
 public class Coordenada {
+
+   @Id @GeneratedValue
+   Long id;
+
    private Integer longitud;
-   
-   private void setLongitud(Integer value) {
-      this.longitud = value;
-   }
-   
-   private Integer getLongitud() {
-      return this.longitud;
-   }
-   
    private Integer latitud;
-   
-   private void setLatitud(Integer value) {
-      this.latitud = value;
-   }
-   
-   private Integer getLatitud() {
-      return this.latitud;
-   }
-   
-   }
+
+}

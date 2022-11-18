@@ -2,69 +2,49 @@ package redescubrecolombia.modelo;
 
 
 import java.util.Set;
+
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.util.Date;
 import java.util.HashSet;
 
-public class Viaje {
-   private String origen;
-   
-   private void setOrigen(String value) {
-      this.origen = value;
-   }
-   
-   private String getOrigen() {
-      return this.origen;
-   }
-   
-   private String destino;
-   
-   private void setDestino(String value) {
-      this.destino = value;
-   }
-   
-   private String getDestino() {
-      return this.destino;
-   }
 
+@Entity
+@NoArgsConstructor
+@Getter @Setter
+@EqualsAndHashCode
+// En UMLLab
+// propiedades:
+//    + nombre:String
+//
+public class Viaje {
+  
+   @Id @GeneratedValue
+   Long id;
+
+   private String origen;
+   private String destino;
+
+   @OneToOne
    private Coordenada coordOrigen;
-   
-   private void setCoordOrigen(Coordenada value) {
-      this.coordOrigen = value;
-   }
-   
-   private Coordenada getCoordOrigen() {
-      return this.coordOrigen;
-   }
-   
+
+   @OneToOne
    private Coordenada coordDestino;
-   
-   private void setCoordDestino(Coordenada value) {
-      this.coordDestino = value;
-   }
-   
-   private Coordenada getCoordDestino() {
-      return this.coordDestino;
-   }
-   
-   private String fechaHoraInicio;
-   
-   private void setFechaHoraInicio(String value) {
-      this.fechaHoraInicio = value;
-   }
-   
-   private String getFechaHoraInicio() {
-      return this.fechaHoraInicio;
-   }
-   
-   private String fechaHoraLlegada;
-   
-   private void setFechaHoraLlegada(String value) {
-      this.fechaHoraLlegada = value;
-   }
-   
-   private String getFechaHoraLlegada() {
-      return this.fechaHoraLlegada;
-   }
-   
+
+   private Date fechaHoraInicio;
+   private Date fechaHoraLlegada;
+     
    /**
     * <pre>
     *           1..1     0..*
@@ -72,14 +52,8 @@ public class Viaje {
     *           viaje        &gt;       datoSalud
     * </pre>
     */
-   private Set<DatoSalud> datoSalud;
-   
-   public Set<DatoSalud> getDatoSalud() {
-      if (this.datoSalud == null) {
-         this.datoSalud = new HashSet<DatoSalud>();
-      }
-      return this.datoSalud;
-   }
+   @OneToMany(mappedBy = "viaje")
+   private Set<DatoSalud> datoSalud = new HashSet<DatoSalud>();
    
    /**
     * <pre>
@@ -88,16 +62,10 @@ public class Viaje {
     *           &lt;       usuario
     * </pre>
     */
+   @ManyToOne(fetch = FetchType.EAGER)
    private Usuario usuario;
    
-   public void setUsuario(Usuario value) {
-      this.usuario = value;
-   }
-   
-   public Usuario getUsuario() {
-      return this.usuario;
-   }
-   
+  
    /**
     * <pre>
     *           1..1     0..*
@@ -105,15 +73,12 @@ public class Viaje {
     *           viaje        &gt;       datoDesaplazamiento
     * </pre>
     */
-   private Set<DatoDesplazamiento> datoDesaplazamiento;
+   @OneToMany(mappedBy = "viaje")
+   private Set<DatoDesplazamiento> datoDesaplazamiento = new HashSet<DatoDesplazamiento>();
    
-   public Set<DatoDesplazamiento> getDatoDesplazamiento() {
-      if (this.datoDesaplazamiento == null) {
-         this.datoDesaplazamiento = new HashSet<DatoDesplazamiento>();
-      }
-      return this.datoDesaplazamiento;
-   }
-   
+
+   // ---
+
    public Integer obtenerPulsoPromedio() {
       // TODO implement this operation
       throw new UnsupportedOperationException("not implemented");

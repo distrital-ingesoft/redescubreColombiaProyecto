@@ -1,36 +1,34 @@
 package redescubrecolombia.modelo;
 
+import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Entity
+@NoArgsConstructor
+@Getter @Setter
+@EqualsAndHashCode
 public class DatoSalud {
-   private String fechaHora;
-   
-   private void setFechaHora(String value) {
-      this.fechaHora = value;
-   }
-   
-   private String getFechaHora() {
-      return this.fechaHora;
-   }
-   
+
+   @Id @GeneratedValue
+   Long id;
+
+   @Temporal(TemporalType.TIMESTAMP)
+   private Date fechaHora;
+
    private Integer pulso;
-   
-   private void setPulso(Integer value) {
-      this.pulso = value;
-   }
-   
-   private Integer getPulso() {
-      return this.pulso;
-   }
-   
    private Integer cantOxigeno;
    
-   private void setCantOxigeno(Integer value) {
-      this.cantOxigeno = value;
-   }
-   
-   private Integer getCantOxigeno() {
-      return this.cantOxigeno;
-   }
    
    /**
     * <pre>
@@ -39,14 +37,8 @@ public class DatoSalud {
     *           datoSalud        &lt;       viaje
     * </pre>
     */
+   @ManyToOne
    private Viaje viaje;
    
-   public void setViaje(Viaje value) {
-      this.viaje = value;
-   }
-   
-   public Viaje getViaje() {
-      return this.viaje;
-   }
-   
-   }
+}   
+
