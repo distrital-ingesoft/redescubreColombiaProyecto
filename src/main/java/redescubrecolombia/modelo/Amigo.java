@@ -1,5 +1,6 @@
 package redescubrecolombia.modelo;
 
+//Hola
 
 public class Amigo {
     private String nombreAmigo;
