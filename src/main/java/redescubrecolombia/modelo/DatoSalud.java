@@ -29,7 +29,7 @@ public class DatoSalud {
    private Integer pulso;
    private Integer cantOxigeno;
    
-   
+   private Integer opinionUsuarioEsfuerzo;
    /**
     * <pre>
     *           0..*     1..1

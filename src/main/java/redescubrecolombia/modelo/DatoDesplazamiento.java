@@ -30,6 +30,16 @@ public class DatoDesplazamiento {
    @OneToOne()
    Coordenada coordenada;
        
+
+   Double velocidad;
+
+   Integer distanciaRecorrida;
+
+   Integer datoDesaplazamiento;
+
+   Integer altimetria;
+
+   //Coordenada coordActual;
     /**
      * <pre>
      *           0..*     1..1

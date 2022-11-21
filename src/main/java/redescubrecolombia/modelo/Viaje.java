@@ -33,6 +33,10 @@ public class Viaje {
    @Id @GeneratedValue
    Long id;
 
+   public String tipoRuta;
+
+   public String nomViaje;
+
    private String origen;
    private String destino;
 
@@ -65,7 +69,8 @@ public class Viaje {
    @ManyToOne(fetch = FetchType.EAGER)
    private Usuario usuario;
    
-  
+
+
    /**
     * <pre>
     *           1..1     0..*

@@ -17,6 +17,7 @@ import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.NonNull;
 import lombok.ToString;
 import lombok.experimental.FieldDefaults;
 
@@ -34,9 +35,14 @@ public class Usuario {
     @Column(unique = true)
     String correo;
 
+    @NonNull
+    String telefono;
+
     @Column(nullable = false)
     String nombre;
     String apellido;
+    
+    //Set<Amigo> amigo;
 
     @Temporal(TemporalType.DATE)
     Date fechaNacimiento;
