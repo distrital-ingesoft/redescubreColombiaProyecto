@@ -9,6 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -57,14 +58,65 @@ public class Usuario {
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "usuario")
     Set<Viaje> viajes = new HashSet<>();
 
-    @OneToMany(mappedBy = "usuario")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "usuario")
     Set<Bicicleta> bicicletas = new HashSet<>();
 
     private void setTelefono(Integer value) {
         this.telefono = value;
      }
 
+     @ManyToMany
+     private Set<Usuario> amigo;
     
 
+     public Boolean crearViaje(Integer idViaje) {
+      // TODO implement this operation
+      throw new UnsupportedOperationException("not implemented");
+   }
+   
+   public Boolean eliminarViaje(Integer idViaje) {
+      // TODO implement this operation
+      throw new UnsupportedOperationException("not implemented");
+   }
+   
+   public Boolean actualizarViaje(Integer idViaje) {
+      // TODO implement this operation
+      throw new UnsupportedOperationException("not implemented");
+   }
+   
+   public void registrar() {
+      // TODO implement this operation
+      throw new UnsupportedOperationException("not implemented");
+   }
+   
+   public Boolean agregarAmigoViaje(String nombre, String apellido) {
+      // TODO implement this operation
+      throw new UnsupportedOperationException("not implemented");
+   }
+   
+   public Boolean agregarAmigoLista(String nombreAmigo, String apellidoAmigo, String emailAmigo) {
+      // TODO implement this operation
+      throw new UnsupportedOperationException("not implemented");
+   }
+   
+   public Boolean borrarAmigoLista(String emailAmigo) {
+      // TODO implement this operation
+      throw new UnsupportedOperationException("not implemented");
+   }
+   
+   public Boolean actualizarAmigoLista(String nombreAmigo, String apellidoAmigo, String emailAmigo) {
+      // TODO implement this operation
+      throw new UnsupportedOperationException("not implemented");
+   }
+   
+   public String consultarAmigoLista(String email) {
+      // TODO implement this operation
+      throw new UnsupportedOperationException("not implemented");
+   }
+   
+   public Integer numeroViajesRealizados() {
+      // TODO implement this operation
+      throw new UnsupportedOperationException("not implemented");
+   }
      
 }    
