@@ -48,7 +48,9 @@ public class Viaje {
 
    private Date fechaHoraInicio;
    private Date fechaHoraLlegada;
-     
+
+
+   
    /**
     * <pre>
     *           1..1     0..*
@@ -81,6 +83,9 @@ public class Viaje {
    @OneToMany(mappedBy = "viaje")
    private Set<DatoDesplazamiento> datoDesaplazamiento = new HashSet<DatoDesplazamiento>();
    
+
+   // @OneToMany(mappedBy = "viaje")
+   // private Set<Lugar>
 
    // ---
 
