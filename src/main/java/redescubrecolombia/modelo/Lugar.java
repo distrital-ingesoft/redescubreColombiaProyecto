@@ -1,7 +1,20 @@
 package redescubrecolombia.modelo;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
+@Entity
 public class Lugar {
+
+    @Id @GeneratedValue
+    Long id;
+    
+    @OneToOne
+    private Viaje viaje;
+
+
     private String origen;
     
     public void setOrigen(String value) {
@@ -22,25 +35,25 @@ public class Lugar {
        return this.destino;
     }
     
-    private Coordenada coordOrigen;
+    // private Coordenada coordOrigen;
     
-    public void setCoordOrigen(Coordenada value) {
-       this.coordOrigen = value;
-    }
+    // public void setCoordOrigen(Coordenada value) {
+    //    this.coordOrigen = value;
+    // }
     
-    public Coordenada getCoordOrigen() {
-       return this.coordOrigen;
-    }
+    // public Coordenada getCoordOrigen() {
+    //    return this.coordOrigen;
+    // }
     
-    private Coordenada coordDestino;
+    // private Coordenada coordDestino;
     
-    public void setCoordDestino(Coordenada value) {
-       this.coordDestino = value;
-    }
+    // public void setCoordDestino(Coordenada value) {
+    //    this.coordDestino = value;
+    // }
     
-    public Coordenada getCoordDestino() {
-       return this.coordDestino;
-    }
+    // public Coordenada getCoordDestino() {
+    //    return this.coordDestino;
+    // }
     
     /**
      * <pre>
@@ -49,15 +62,14 @@ public class Lugar {
      *           lugar        &lt;       viaje
      * </pre>
      */
-    private Viaje viaje;
+ 
+    // public void setViaje(Viaje value) {
+    //    this.viaje = value;
+    // }
     
-    public void setViaje(Viaje value) {
-       this.viaje = value;
-    }
-    
-    public Viaje getViaje() {
-       return this.viaje;
-    }
+    // public Viaje getViaje() {
+    //    return this.viaje;
+    // }
     
     /**
      * <pre>
@@ -66,15 +78,15 @@ public class Lugar {
      *           lugar1        &lt;       viaje1
      * </pre>
      */
-    private Viaje viaje1;
+    // private Viaje viaje1;
     
-    public void setViaje1(Viaje value) {
-       this.viaje1 = value;
-    }
+    // public void setViaje1(Viaje value) {
+    //    this.viaje1 = value;
+    // }
     
-    public Viaje getViaje1() {
-       return this.viaje1;
-    }
+    // public Viaje getViaje1() {
+    //    return this.viaje1;
+    // }
     
     }
  

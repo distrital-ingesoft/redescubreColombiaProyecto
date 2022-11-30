@@ -84,10 +84,10 @@ public class Viaje {
    private Set<DatoDesplazamiento> datoDesaplazamiento = new HashSet<DatoDesplazamiento>();
    
 
-   // @OneToMany(mappedBy = "viaje")
-   // private Set<Lugar>
+   @OneToMany(mappedBy = "viaje")
+   private Set<Lugar> lugarOrigen = new HashSet<Lugar>();
 
-   // ---
+ 
 
    public Integer obtenerPulsoPromedio() {
       // TODO implement this operation
