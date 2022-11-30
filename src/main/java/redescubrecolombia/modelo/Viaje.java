@@ -33,7 +33,7 @@ public class Viaje {
    @Id @GeneratedValue
    Long id;
 
-   public String tipoRuta;
+   public Integer tipoRuta;
 
    public String nomViaje;
 

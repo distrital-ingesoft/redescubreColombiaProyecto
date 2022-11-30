@@ -35,12 +35,17 @@ public class Usuario {
     @Column(unique = true)
     String correo;
 
+
     @NonNull
-    String telefono;
+    String username;
+
+    @NonNull
+    Integer telefono;
 
     @Column(nullable = false)
     String nombre;
     String apellido;
+
     
     //Set<Amigo> amigo;
 
@@ -52,4 +57,14 @@ public class Usuario {
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "usuario")
     Set<Viaje> viajes = new HashSet<>();
 
+    @OneToMany(mappedBy = "usuario")
+    Set<Bicicleta> bicicletas = new HashSet<>();
+
+    private void setTelefono(Integer value) {
+        this.telefono = value;
+     }
+
+    
+
+     
 }    

@@ -1,22 +1,29 @@
 package redescubrecolombia.modelo;
 
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
+
+@Entity
 public class Bicicleta {
 
    @Id @GeneratedValue
    Long id;
 
-   private String tipoBicicleta;
+   
+   public Integer tipoBicicleta;
 
-   private void setTipoBicicleta(String value) {
-      this.tipoBicicleta = value;
-   }
+   // private void setTipoBicicleta(int value) {
+   //    this.tipoBicicleta = value;
+   // }
 
-   private String getTipoBicicleta() {
-      return this.tipoBicicleta;
-   }
+   // private Integer getTipoBicicleta() {
+   //    return this.tipoBicicleta;
+   // }
 
    /**
     * <pre>
@@ -25,12 +32,15 @@ public class Bicicleta {
     *           bicicleta        &lt;       usuario
     * </pre>
     */
+    
+   @ManyToOne(fetch = FetchType.EAGER)
    private Usuario usuario;
+
 
    public void setUsuario(Usuario value) {
       this.usuario = value;
    }
-
+   
    public Usuario getUsuario() {
       return this.usuario;
    }
