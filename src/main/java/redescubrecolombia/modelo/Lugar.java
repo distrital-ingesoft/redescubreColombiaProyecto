@@ -11,8 +11,7 @@ public class Lugar {
     @Id @GeneratedValue
     Long id;
     
-    @OneToOne
-    private Viaje viaje;
+
 
 
     private String origen;
@@ -35,25 +34,11 @@ public class Lugar {
        return this.destino;
     }
     
-    // private Coordenada coordOrigen;
-    
-    // public void setCoordOrigen(Coordenada value) {
-    //    this.coordOrigen = value;
-    // }
-    
-    // public Coordenada getCoordOrigen() {
-    //    return this.coordOrigen;
-    // }
-    
-    // private Coordenada coordDestino;
-    
-    // public void setCoordDestino(Coordenada value) {
-    //    this.coordDestino = value;
-    // }
-    
-    // public Coordenada getCoordDestino() {
-    //    return this.coordDestino;
-    // }
+   @OneToOne 
+   private Coordenada coordOrigen;
+
+   @OneToOne 
+   private Coordenada coordDestino;
     
     /**
      * <pre>
@@ -63,13 +48,9 @@ public class Lugar {
      * </pre>
      */
  
-    // public void setViaje(Viaje value) {
-    //    this.viaje = value;
-    // }
-    
-    // public Viaje getViaje() {
-    //    return this.viaje;
-    // }
+
+    @OneToOne
+    private Viaje viaje;
     
     /**
      * <pre>
