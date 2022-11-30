@@ -88,7 +88,10 @@ public class Viaje {
    private Set<Lugar> lugarOrigen = new HashSet<Lugar>();
 
  
+   @OneToMany(mappedBy = "viaje")
+   private Set<Lugar> lugarDestino = new HashSet<Lugar>();
 
+   
    public Integer obtenerPulsoPromedio() {
       // TODO implement this operation
       throw new UnsupportedOperationException("not implemented");
@@ -100,6 +103,31 @@ public class Viaje {
    }
    
    public Integer obtenerPulsoMaximo() {
+      // TODO implement this operation
+      throw new UnsupportedOperationException("not implemented");
+   }
+   
+   public Integer obtenerDistanciaRecorrida() {
+      // TODO implement this operation
+      throw new UnsupportedOperationException("not implemented");
+   }
+   
+   public Integer obtenerTiempoRecorrido() {
+      // TODO implement this operation
+      throw new UnsupportedOperationException("not implemented");
+   }
+   
+   public Integer obtenerDistanciaTotalRecorrida() {
+      // TODO implement this operation
+      throw new UnsupportedOperationException("not implemented");
+   }
+   
+   public Integer obtenterTiempoTotalRecorrido() {
+      // TODO implement this operation
+      throw new UnsupportedOperationException("not implemented");
+   }
+   
+   public float distanciaRecorridaTipoBicicleta() {
       // TODO implement this operation
       throw new UnsupportedOperationException("not implemented");
    }
