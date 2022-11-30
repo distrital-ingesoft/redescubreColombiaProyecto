@@ -61,13 +61,14 @@ public class Usuario {
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "usuario")
     Set<Bicicleta> bicicletas = new HashSet<>();
 
-    private void setTelefono(Integer value) {
-        this.telefono = value;
-     }
+
 
      @ManyToMany
      private Set<Usuario> amigo;
     
+   private void setTelefono(Integer value) {
+      this.telefono = value;
+   }
 
      public Boolean crearViaje(Integer idViaje) {
       // TODO implement this operation
