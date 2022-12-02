@@ -1,0 +1,13 @@
+/workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/modelo/Bicicleta.java
+/workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/modelo/DatoDesplazamiento.java
+/workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/modelo/Usuario.java
+/workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/repository/UsuarioRepository.java
+/workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/UsuarioApplication.java
+/workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/repository/BicicletaRepository.java
+/workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/modelo/Coordenada.java
+/workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/modelo/Lugar.java
+/workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/modelo/Viaje.java
+/workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/controllers/HolaMundo.java
+/workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/modelo/DatoSalud.java
+/workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/controllers/BicicletaController.java
+/workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/controllers/UsuarioController.java
