@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import redescubrecolombia.modelo.Usuario;
 import redescubrecolombia.repository.UsuarioRepository;
 @RestController
-@RequestMapping("/")
+@RequestMapping("/usuario")
 public class UsuarioController {
     
     private final UsuarioRepository redescubrecolombiaRepository;
@@ -16,13 +16,13 @@ public class UsuarioController {
         this.redescubrecolombiaRepository = tareasRepository;
     } 
 
-    @PostMapping("/")
+    @PostMapping("/usuario")
     @ResponseStatus(HttpStatus.CREATED)
     public Usuario crearEjemplo(@RequestBody Usuario todo) {
         return redescubrecolombiaRepository.save(todo);
     }
 
-    @GetMapping("/")
+    @GetMapping("/usuario")
     public Iterable<Usuario> getEjemplo() {
         return redescubrecolombiaRepository.findAll();
     }
