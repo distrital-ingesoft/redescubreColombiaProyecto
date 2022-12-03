@@ -9,6 +9,7 @@
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/repository/ViajeRepository.java
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/controllers/ViajeController.java
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/modelo/Coordenada.java
+/workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/repository/CoordenadaRepository.java
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/modelo/Lugar.java
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/modelo/Viaje.java
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/controllers/HolaMundo.java

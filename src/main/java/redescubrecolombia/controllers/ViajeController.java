@@ -16,13 +16,13 @@ public class ViajeController {
         this.redescubrecolombiaRepository = tareasRepository;
     } 
 
-    @PostMapping("/Viaje")
+    @PostMapping("/viaje")
     @ResponseStatus(HttpStatus.CREATED)
     public Viaje crearEjemplo(@RequestBody Viaje todo) {
         return redescubrecolombiaRepository.save(todo);
     }
 
-    @GetMapping("/Viaje")
+    @GetMapping("/viaje")
     public Iterable<Viaje> getEjemplo() {
         return redescubrecolombiaRepository.findAll();
     }
