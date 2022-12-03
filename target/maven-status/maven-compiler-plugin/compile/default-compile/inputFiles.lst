@@ -14,5 +14,6 @@
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/modelo/Viaje.java
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/controllers/HolaMundo.java
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/modelo/DatoSalud.java
+/workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/controllers/CoordenadaController.java
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/controllers/BicicletaController.java
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/controllers/UsuarioController.java
