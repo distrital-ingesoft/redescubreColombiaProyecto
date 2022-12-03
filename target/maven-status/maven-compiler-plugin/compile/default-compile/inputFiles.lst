@@ -2,8 +2,10 @@
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/modelo/DatoDesplazamiento.java
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/modelo/Usuario.java
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/repository/UsuarioRepository.java
+/workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/controllers/LugarController.java
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/UsuarioApplication.java
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/repository/BicicletaRepository.java
+/workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/repository/LugarRepository.java
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/repository/ViajeRepository.java
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/controllers/ViajeController.java
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/modelo/Coordenada.java
