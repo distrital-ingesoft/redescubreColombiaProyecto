@@ -62,9 +62,11 @@ public class Usuario {
     Set<Bicicleta> bicicletas = new HashSet<>();
 
 
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "usuario")
+    Set<Amigo> amigos = new HashSet<>();
 
-     @ManyToMany
-     private Set<Usuario> amigo;
+     //@ManyToMany
+     //private Set<Usuario> amigo;
     
    private void setTelefono(Integer value) {
       this.telefono = value;
