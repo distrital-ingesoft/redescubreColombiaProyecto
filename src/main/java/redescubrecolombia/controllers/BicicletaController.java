@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import redescubrecolombia.modelo.Bicicleta;
 import redescubrecolombia.repository.BicicletaRepository;
 @RestController
-@RequestMapping("/")
+@RequestMapping("/bicicleta")
 public class BicicletaController {
     
     private final BicicletaRepository redescubrecolombiaRepository;
@@ -16,13 +16,13 @@ public class BicicletaController {
         this.redescubrecolombiaRepository = tareasRepository;
     } 
 
-    @PostMapping("/")
+    @PostMapping("/bicicleta")
     @ResponseStatus(HttpStatus.CREATED)
     public Bicicleta crearEjemplo(@RequestBody Bicicleta todo) {
         return redescubrecolombiaRepository.save(todo);
     }
 
-    @GetMapping("/")
+    @GetMapping("/bicicleta")
     public Iterable<Bicicleta> getEjemplo() {
         return redescubrecolombiaRepository.findAll();
     }

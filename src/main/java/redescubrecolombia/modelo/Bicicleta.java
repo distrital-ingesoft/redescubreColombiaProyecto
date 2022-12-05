@@ -34,14 +34,14 @@ public class Bicicleta {
     */
     
    @ManyToOne(fetch = FetchType.EAGER)
-   private Usuario usuario;
+   private User usuario;
 
 
-   public void setUsuario(Usuario value) {
+   public void setUsuario(User value) {
       this.usuario = value;
    }
    
-   public Usuario getUsuario() {
+   public User getUsuario() {
       return this.usuario;
    }
 

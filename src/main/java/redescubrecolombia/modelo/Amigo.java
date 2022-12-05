@@ -54,7 +54,7 @@ public class Amigo {
      */
  
      @ManyToOne(fetch = FetchType.EAGER)
-    private Usuario usuario;
+    private User usuario;
 
     
      

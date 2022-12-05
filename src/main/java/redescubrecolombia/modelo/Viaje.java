@@ -65,11 +65,11 @@ public class Viaje {
     * <pre>
     *           1..1     1..1
     * Viaje ------------------------> Usuario
-    *           &lt;       usuario
+    *           &lt;       usuario  
     * </pre>
     */
    @ManyToOne(fetch = FetchType.EAGER)
-   private Usuario usuario;
+   private User usuario;
    
 
 
