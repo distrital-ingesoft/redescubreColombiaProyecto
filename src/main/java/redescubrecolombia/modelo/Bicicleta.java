@@ -6,9 +6,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
+import lombok.Data;
+
 
 
 @Entity
+@Data 
 public class Bicicleta {
 
    @Id @GeneratedValue
@@ -37,22 +40,7 @@ public class Bicicleta {
    private User usuario;
 
 
-   public void setUsuario(User value) {
-      this.usuario = value;
-   }
-   
-   public User getUsuario() {
-      return this.usuario;
-   }
 
-   public String getBicicleta() {
-      // TODO implement this operation
-      throw new UnsupportedOperationException("not implemented");
-   }
 
-   public String setBicicleta() {
-      // TODO implement this operation
-      throw new UnsupportedOperationException("not implemented");
-   }
 
 }
