@@ -37,7 +37,7 @@ public class BicicletaController {
     
     @GetMapping("usuario/{id}/bicicleta/")
     public Iterable<Bicicleta> getBicicletasPorIdUsuario(@PathVariable(name = "id") Long idUsuario) throws Exception {
-        return redescubrecolombiaRepository.encontrarPorIdUsuario(idUsuario);
+        return redescubrecolombiaRepository.encontrarPorIdUsuarioBicicleta(idUsuario);
     }
     
 

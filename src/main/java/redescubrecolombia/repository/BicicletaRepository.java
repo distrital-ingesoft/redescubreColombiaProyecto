@@ -10,8 +10,8 @@ import redescubrecolombia.modelo.Bicicleta;
 @Repository
 
 public interface BicicletaRepository extends JpaRepository<Bicicleta, Long> {
-    @Query("select B from Bicicleta B where B.usuario.id = ?1")
-    List<Bicicleta> encontrarPorIdUsuario(Long idUsuario);    
+    @Query("select A from Bicicleta B where B.usuario.id = ?1")
+    List<Bicicleta> encontrarPorIdUsuarioBicicleta(Long idUsuario);    
 }
 
 

@@ -20,9 +20,9 @@ public class AmigoService {
     @Autowired
     private UserRepository userRepository;
 
-    public Amigo crearAmigo(Amigo amigo, Long idUsuario) throws Exception{
+    public Amigo agregarAmigo(Amigo amigo, Long idUsuario) throws Exception{
 
-        if(amigo.getEmail() == null) {
+        if(amigo.getEmail().isEmpty()) {
             throw new Exception("no existe ese amigo");
         }
 

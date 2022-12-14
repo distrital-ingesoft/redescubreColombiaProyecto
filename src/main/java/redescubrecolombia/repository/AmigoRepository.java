@@ -12,5 +12,5 @@ import redescubrecolombia.modelo.Amigo;
 
 public interface AmigoRepository  extends JpaRepository<Amigo, Long> {
     @Query("select A from Amigo A where A.usuario.id = ?1")
-    List<Amigo> encontrarPorIdUsuario(Long idUsuario);    
+    List<Amigo> encontrarPorIdUsuarioAmigo(Long idUsuario);    
 }

@@ -13,6 +13,7 @@
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/modelo/Bicicleta.java
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/controllers/AmigoController.java
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/modelo/CustomUserDetails.java
+/workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/service/ViajeService.java
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/controllers/DatoDesplazamientoController.java
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/UsuarioApplication.java
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/modelo/User.java

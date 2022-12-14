@@ -26,7 +26,7 @@ public class AmigoController {
     @ResponseStatus(HttpStatus.CREATED)
     public Amigo crearEjemplo  (@RequestBody Amigo amigo, @PathVariable(name = "id") Long idUsuario) throws Exception{
         
-        return amigoService.crearAmigo(amigo, idUsuario);
+        return amigoService.agregarAmigo(amigo, idUsuario);
         
     }
 
@@ -37,7 +37,7 @@ public class AmigoController {
     
     @GetMapping("usuario/{id}/amigo/")
     public Iterable<Amigo> getBicicletasPorIdUsuario(@PathVariable(name = "id") Long idUsuario) throws Exception {
-        return redescubrecolombiaRepository.encontrarPorIdUsuario(idUsuario);
+        return redescubrecolombiaRepository.encontrarPorIdUsuarioAmigo(idUsuario);
     }
 
 }
