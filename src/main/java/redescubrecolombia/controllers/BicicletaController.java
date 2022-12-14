@@ -10,6 +10,7 @@ import redescubrecolombia.repository.BicicletaRepository;
 import redescubrecolombia.service.BicicletaService;
 @RestController
 @RequestMapping("/bicicleta")
+
 public class BicicletaController {
     
     private final BicicletaRepository redescubrecolombiaRepository;

@@ -1,4 +1,5 @@
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/modelo/DatoDesplazamiento.java
+/workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/service/AmigoService.java
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/controllers/LugarController.java
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/repository/ViajeRepository.java
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/repository/UserRepository.java
@@ -20,6 +21,7 @@
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/repository/LugarRepository.java
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/repository/DatoSaludRepository.java
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/controllers/ViajeController.java
+/workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/service/BicicletaService.java
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/modelo/Lugar.java
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/modelo/DatoSalud.java
 /workspaces/redescubreColombiaProyecto/src/main/java/redescubrecolombia/repository/AmigoRepository.java
