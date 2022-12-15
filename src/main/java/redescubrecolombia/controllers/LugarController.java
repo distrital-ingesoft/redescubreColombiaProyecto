@@ -22,7 +22,7 @@ public class LugarController {
         return redescubrecolombiaRepository.save(todo);
     }
 
-    @GetMapping("/lugar")
+    @GetMapping("/viaje/{id}/lugar")
     public Iterable<Lugar> getEjemplo() {
         return redescubrecolombiaRepository.findAll();
     }

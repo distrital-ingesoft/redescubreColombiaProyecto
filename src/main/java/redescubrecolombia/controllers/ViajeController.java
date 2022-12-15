@@ -24,11 +24,12 @@ public class ViajeController {
 
     @PostMapping("/usuario/{id}/viaje")
     @ResponseStatus(HttpStatus.CREATED)
-    public Viaje crearEjemplo  (@RequestBody Viaje viaje, @PathVariable(name = "id") Long idUsuario) throws Exception{
+    public Viaje crearViajeIndividual  (@RequestBody Viaje viaje, @PathVariable(name = "id") Long idUsuario) throws Exception{
         
         return viajeService.crearViaje(viaje, idUsuario);
         
     }
+
 
     @GetMapping("/viaje")
     public Iterable<Viaje> getEjemplo() {
